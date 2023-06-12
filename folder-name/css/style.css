@@ -1,27 +1,3 @@
-@media (min-width: 992px) {
-  /* styles for desktop view */
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  /* styles for tablet view */
-}
-
-@media (max-width: 767px) {
-  /* styles for mobile view */
-}
-<h1>My Responsive Web Page</h1>
-<div id="section1" class="section">
-  <div class="title">Chicken</div>
-  <p>Lorem ipsum dolor sit amet...</p>
-</div>
-<div id="section2" class="section">
-  <div class="title">Beef</div>
-  <p>Lorem ipsum dolor sit amet...</p>
-</div>
-<div id="section3" class="section">
-  <div class="title">Sushi</div>
-  <p>Lorem ipsum dolor sit amet...</p>
-</div>
 /* common styles for all sections */
 .section {
   box-sizing: border-box;
