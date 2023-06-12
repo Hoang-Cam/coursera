@@ -1,63 +1,79 @@
-/* common styles for all sections */
-.section {
+* {
   box-sizing: border-box;
-  border: 1px solid black;
 }
 
-/* common styles for all section titles */
+h1 {
+  text-align: center;
+  font-size: 1.75em;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.section {
+  position: relative;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+
 .title {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -10px;
+  right: -10px;
   border: 1px solid black;
+  padding: 5px;
 }
 
-/* styles for desktop view */
 @media (min-width: 992px) {
   .section {
-    width: 33%;
+    width: calc(100% / 3 - 20px);
     float: left;
-    margin: 10px;
-    padding: 10px;
     background-color: lightblue;
+    color: black;
+    font-family: Arial, sans-serif; /* optional */
+    font-size: 1.25em; /* optional */
   }
-  
+
   .title {
-    background-color: yellow;
+    background-color: blue;
+    color: white;
+    font-size: 1.5625em; /* optional */
   }
 }
 
-/* styles for tablet view */
 @media (min-width: 768px) and (max-width: 991px) {
   .section {
-    width: 50%;
+    width: calc(100% / 2 - 20px);
     float: left;
-    margin: 10px;
-    padding: 10px;
     background-color: lightgreen;
-  }
-  
-  #section3 {
-    width: 100%;
-    clear: both; /* prevent floating elements on both sides */
-  }
-  
-  .title {
-    background-color: pink;
-  }
+    color: black;
+    font-family: Arial, sans-serif; /* optional */
+    font-size: 1.25em; /* optional */
+    
+ }
+
+ .title {
+   background-color:green; 
+   color:white; 
+   font-size:1.5625em; /* optional */
+ }
 }
 
-/* styles for mobile view */
-@media (max-width: 767px) {
+@media (max-width:767px) {
    .section {
-    width: 100%;
-    float: none;
-    margin: 10px;
-    padding: 10px;
-    background-color: lightgray;
-  }
-  
-  .title {
-    background-color: orange;
-  }
+     width: calc(100% -20px);
+     background-color: lightpink;
+     color:black; 
+     font-family: Arial, sans-serif; /* optional */
+     font-size:1.25em; /* optional */
+   }
+
+   .title {
+     background-color:pink; 
+     color:white; 
+     font-size:1.5625em; /* optional */
+   }
 }
