@@ -1,1 +1,1 @@
-(function (window) { var speakWord = “Hello”; // use " or ’ instead of “ and ” function speak(name) { console.log(speakWord + " " + name); } window.speak = speak; })(window);
+<script src=“speakhello.js”></script> <script src=“speakgoodbye.js”></script> <script> var names = [“Yaakov”, “John”, “Jen”, “Jason”, “Paul”, “Frank”, “Larry”, “Paula”, “Laura”, “Jim”]; for (var i = 0; i < names.length; i++) { var firstLetter = names[i].charAt(0).toLowerCase(); if (firstLetter === ‘j’) { speak(names[i]); } else { speak(names[i]); } } </script>
