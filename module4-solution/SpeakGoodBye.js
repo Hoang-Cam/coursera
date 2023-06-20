@@ -1,7 +1,7 @@
 // This is an IIFE
 (function () {
   // Your code goes here
-  var speakWord = "Good Bye";
+  var speakWord = "Goodbye";
   function speak(name) {
     console.log(speakWord + " " + name);
   }
@@ -11,12 +11,12 @@
 // Create an empty object
 var byeSpeaker = {};
 // Define the speakWord variable
-var speakWord = "Good Bye";
-// Define the speak method and attach it to the byeSpeaker object
+var speakWord = "Goodbye";
+// Define the speak method and attach it to the helloSpeaker object
 byeSpeaker.speak = function (name) {
   console.log(speakWord + " " + name);
 };
-// Expose the byeSpeaker object to the global scope
+// Expose the helloSpeaker object to the global context
 window.byeSpeaker = byeSpeaker;
 // Using dot notation
 byeSpeaker.speak = function (name) {
@@ -27,5 +27,5 @@ byeSpeaker.speak = function (name) {
 byeSpeaker["speak"] = function (name) {
   console.log(speakWord + " " + name);
 };
-// Expose the byeSpeaker object to the global scope
+// Expose the helloSpeaker object to the global scope
 window.byeSpeaker = byeSpeaker;
